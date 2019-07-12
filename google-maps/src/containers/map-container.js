@@ -5,7 +5,7 @@ class MapContainer extends Component {
   render(){
     return(
       <div className="map-container">
-      
+      Map Goes Here
       </div>
     )
   }
