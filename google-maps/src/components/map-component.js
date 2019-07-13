@@ -5,11 +5,15 @@ import GoogleMapReact from 'google-map-react';
 //Components
 import MarkerComponent from './marker-component.js'
 
+//Keys
+import {GOOGLE_API_KEY} from '../google_api_key'
+
 const MapComponent = (props) => {
   return(
     <div style={{ height: '100vh', width: '100%' }}>
+      {console.log(GOOGLE_API_KEY)}
       <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyDC4k4yYUQZkSLE9ytWPB1uqh3kneG1SOk" }}
+          bootstrapURLKeys={{ key: `${GOOGLE_API_KEY}`}}
           defaultCenter={props.center}
           defaultZoom={props.zoom}
         >
